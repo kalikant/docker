@@ -1,0 +1,29 @@
+-- list out all docker images
+docker images
+
+-- list out all docker process
+docker ps -a   
+
+-- kill specific docker process
+docker kill <CONTAINER ID>
+
+-- running docker image in interactive mode
+docker run -it <image_name>
+
+-- checking docker logs
+docker logs 1737365ce5f8cb9ebb34816362ec8f6af41bf48264b2328e29db7759b8609927 <full_conatiner_id>
+
+-- port mapping
+docker run -it -d -p 8888:8080 tomcat:8.0 <docker_port>:<internal_server_port> <server_name>
+
+-- reaching out to server in docker, default ip of docker is localhost in latest version
+
+-- docker remore repository login
+docker login
+
+-- comitt you changes to local repository 
+docker commit 86b6ebda32fa kalikant/data-analytics:1.0 <conatiner_id> <docker_account/image name:<tag_name>>
+
+-- push your image to docker hub
+docker push kalikant/data-analytics:1.0 <docker_account/image name:<tag_name>>
+

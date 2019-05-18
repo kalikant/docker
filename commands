@@ -1,3 +1,6 @@
+-- building docker file
+docker build -t data-analystics/sql <image_name>
+
 -- list out all docker images
 docker images
 
